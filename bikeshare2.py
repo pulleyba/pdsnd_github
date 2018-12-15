@@ -144,22 +144,19 @@ def display_data(df):
 
 def main():
     while True:
-        try:
-            city, month, day = get_filters()
-            df = load_data(city, month, day)
+        city, month, day = get_filters()
+        df = load_data(city, month, day)
 
-            time_stats(df)
-            station_stats(df)
-            trip_duration_stats(df)
-            user_stats(df)
+        time_stats(df)
+        station_stats(df)
+        trip_duration_stats(df)
+        user_stats(df)
+
+        display_data(df)
+
+        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        if restart.lower() != 'yes':
             break
-        except KeyError:
-            print('\nSorry, error in searching for the information you requested!')
-        finally:
-            restart = input('\nWould you like to restart? Enter yes or no.\n')
-            if restart.lower() != 'yes':
-                break
-
 
 if __name__ == "__main__":
 	main()
