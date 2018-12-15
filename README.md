@@ -5,7 +5,7 @@ November 25th, 2018
 Bikeshare Data Exploration
 
 ### Description
-Describe what your project is about and what it does
+The project utilizes Python coding skills to extract raw data from several .cvs files and manipulate the dataset to make a user-friendly way to navigate Bikeshare information from 3 major U.S. cities. 
 
 ### Files used
 bikeshare.py
