@@ -9,15 +9,65 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
-        try:
-            city = input("Choose Chicago, Washington D.C. (type washington) or New York City: ")
-            month = input("Enter Month: ")
-            day = input("Enter Day of Week: ")
+        city = input("Choose Chicago, Washington D.C. (type washington) or New York City: ").lower()
+        if city == 'chicago':
+            print('\nGood Choice')
             break
-        except:
+        elif city == 'new york city':
+            print('\nGood Choice')
+            break
+        elif city == 'washington':
+            print('\nGood Choice')
             break
         else:
-            print('Oops Error')
+            print('\nNot a Valid Entry\nTry Again')
+    while True:
+        month = input("Enter Month: ").lower()
+        if month == 'january':
+            print('\nGood Choice')
+            break
+        elif month == 'february':
+            print('\nGood Choice')
+            break
+        elif month == 'march':
+            print('\nGood Choice')
+            break
+        elif month == 'april':
+            print('\nGood Choice')
+            break
+        elif month == 'may':
+            print('\nGood Choice')
+            break
+        elif month == 'june':
+            print('\nGood Choice')
+            break
+        else:
+            print('\nNot a Valid Entry\nTry Again')
+    while True:
+        day = input("Enter Day of Week: ").lower()
+        if day == 'monday':
+            print('\nGood Choice')
+            break
+        elif day == 'tuesday':
+            print('\nGood Choice')
+            break
+        elif day == 'wednesday':
+            print('\nGood Choice')
+            break
+        elif day == 'thursday':
+            print('\nGood Choice')
+            break
+        elif day == 'friday':
+            print('\nGood Choice')
+            break
+        elif day == 'saturday':
+            print('\nGood Choice')
+            break
+        elif day == 'sunday':
+            print('\nGood Choice')
+            break
+        else:
+            print('\nNot a Valid Entry\nTry Again')
     print('-'*40)
     return city, month, day
 
