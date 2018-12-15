@@ -122,6 +122,24 @@ def user_stats(df):
             print('-'*40)
             break
 
+def display_data(df):
+    while True:
+        data_inquiry = input('\nWould you like to view raw data? Enter yes or no.\n')
+        if data_inquiry.lower() != 'yes':
+            break
+        num = 5
+        raw_data = df.head(num)
+        print(raw_data)
+        break
+    while True:
+        data_inquiry2 = input('\nWould you like to view more? Enter yes or no.\n')
+        if data_inquiry2.lower() != 'yes':
+            break
+        num += 5
+        raw_data = df.head(num)
+        print(raw_data)
+
+    return raw_data
 
 
 def main():
